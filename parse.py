@@ -14,7 +14,7 @@ def parse_about(html):
     table_about = soup_about.find('div', class_='scores')  # ищет раздел с балами
     current_about = table_about.find('meta', itemprop='ratingValue')  # находит сам балл
     anime_rating = current_about.get('content')  # получает значение
-    sleep(1)  # засыпает чтобы сарвак не закрыл кран
+    sleep(1)  # засыпает чтобы сервак не закрыл кран
 
 
 def parse(html):
